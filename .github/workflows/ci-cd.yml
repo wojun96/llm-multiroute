@@ -30,9 +30,9 @@ jobs:
         OLLAMA_BASE_URL: ${{ secrets.OLLAMA_BASE_URL }}
         OLLAMA_API_KEY: ${{ secrets.OLLAMA_API_KEY }}
         OLLAMA_MODEL_CLASSIFY: gemma3:4b
-        OLLAMA_MODEL_SENTIMENT: llama3.2
-        OLLAMA_MODEL_SUMMARIZE: mistral
-        OLLAMA_MODEL_INTENT: qwen2.5
+        OLLAMA_MODEL_SENTIMENT: ministral-3:3b
+        OLLAMA_MODEL_SUMMARIZE: ministral-3:8b
+        OLLAMA_MODEL_INTENT: gemma3:12b
     
     - name: Lint with flake8
       run: |
